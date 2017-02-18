@@ -15,6 +15,9 @@ __Author__ = "cdhigh <https://github.com/cdhigh>"
 
 from wsgiref.util import is_hop_by_hop
 import os, urllib, urllib2, socket, bottle
+import ssl 
+
+ssl._create_default_https_context = ssl._create_unverified_context
 
 ALLOW_KEYS = '1871c15d9dc1e2c7'
 
